@@ -1,0 +1,76 @@
+@font-face {
+    font-family: tomaso ;
+    src: url("../fonts/alk-tommaso-webfont.ttf");
+}
+@font-face {
+    font-family: mg-glaho-drunk ;
+    src: url("../fonts/mg-glaho-drunk-webfont.svg");
+}
+@font-face {
+    font-family: algeti ;
+    src: url("../fonts/bpg-algeti-webfont.ttf");
+}
+@font-face {
+    font-family: nino;
+    src: url("../fonts/bpg-nino-medium-webfont.ttf");
+}
+@font-face {
+    font-family: caps;
+    src: url("../fonts/bpg-banner-caps-webfont.ttf");
+}
+@font-face {
+    font-family: dejavu;
+    src: url("../fonts/dejavu-sans-bold-webfont.ttf");
+}
+@font-face {
+    font-family: grotesk;
+    src: url("../fonts/neuzeit_grotesk_bold (1).otf");
+}
+@font-face {
+    font-family: archyedt;
+    src: url("../fonts/archyedt-bold-webfont.ttf");
+}
+@font-face {
+    font-family: notoblack;
+    src: url("../fonts/NotoSansGeorgian-Black.ttf");
+}
+@font-face {
+    font-family: notobold;
+    src: url("../fonts/NotoSansGeorgian-Bold.ttf");
+}
+@font-face {
+    font-family: notoebold;
+    src: url("../fonts/NotoSansGeorgian-ExtraBold.ttf");
+}
+@font-face {
+    font-family: notolight;
+    src: url("../fonts/NotoSansGeorgian-Light.ttf");
+}
+@font-face {
+    font-family: notothin;
+    src: url("../fonts/NotoSansGeorgian-Thin.ttf");
+}
+.drunk {
+    font-family: mg-glaho-drunk;
+}
+.tomaso {
+    font-family: tomaso;
+}
+.algeti {
+    font-family: algeti;
+}
+.dejavu {
+    font-family: dejavu;
+}
+.grotesk {
+    font-family: grotesk;
+}
+.archyedt {
+    font-family: archyedt;
+}
+.caps {
+    font-family: caps;
+}
+.nino {
+    font-family: nino;
+}

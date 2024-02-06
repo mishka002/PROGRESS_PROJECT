@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        height: 100%;
+        margin: 0;
+        background: url("imgs/cover-6.jpg") no-repeat fixed;
+        background-size: 100% 100%;
+        color: #fff3cd;
+    }
+
+    .topleft {
+        position: absolute;
+        top: 10px;
+        left: 16px;
+    }
+
+    .bottomleft {
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+    }
+
+    .middle{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: tomaso;
+    }
+
+    hr {
+        margin: auto;
+        width: 40%;
+    }
+</style>
+<body>
+
+<div class="bgimg">
+    <div class="topleft">
+        <img src="imgs/logo.png" width="100" alt="">
+    </div>
+    <div class="middle">
+        <h1>The website is undergoing some technical maintenance. </h1>
+        <h1>საიტზე მიმდინაორებს ტექნიკური სამუშაოები </h1>
+        <hr>
+        <p id="demo" style="font-size:30px;color: #f1f1f1"></p>
+    </div>
+    <div class="bottomleft">
+        <a href="">
+            <img src="imgs/facebook.svg" width="55" alt="">
+        </a>
+    </div>
+</div>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Nov 30, 2020 19:30:00").getTime();
+
+    // Update the count down every 1 second
+    var countdownfunction = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML =
+            + minutes + " წუთი " + seconds + " წამი ";
+
+        // If the count down is over, write some text
+        if (distance < 5){
+            document.getElementById("demo").style.color = "red";
+        }
+        if (distance < 0) {
+            var refresh = location.reload();
+            clearInterval(countdownfunction);
+            document.getElementById("demo").innerHTML = refresh;
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
